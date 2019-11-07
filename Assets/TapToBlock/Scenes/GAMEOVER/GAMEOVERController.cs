@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using SS.View;
+using TMPro;
 
 public class GAMEOVERController : Controller
 {

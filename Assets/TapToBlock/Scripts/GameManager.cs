@@ -7,10 +7,10 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
     [HideInInspector] public Stage stage;
-    public static int indexStage = 25;
-    [Space]
-    [Header("Particle Effect")]
-    [SerializeField] ParticleSystem m_DeadBall;
+    public static int indexStage = 50;
+
+    [SerializeField] GameObject m_BtnReset;
+
 
     void Awake()
     {
@@ -32,16 +32,26 @@ public class GameManager : MonoBehaviour
         //run animation win
         SetBallWhenDead();
 
+        if(indexStage < 50)
+        {
+            indexStage += 1;
+            Debug.Log(indexStage);
+        }
+        else
+        {
+            Manager.Load(PopupComingSoonController.POPUPCOMINGSOON_SCENE_NAME);
+        }
+
+        m_BtnReset.SetActive(false);
         yield return new WaitForSeconds(1.5f);
-        indexStage += 1;
-        Manager.Load(GAMEController.GAME_SCENE_NAME);
+        Manager.Add(WINGAMEController.WINGAME_SCENE_NAME);
     }
 
     public IEnumerator GameOver()
     {
         //run animation dead
         SetBallWhenDead();
-        //Instantiate(m_DeadBall, transform.position, Quaternion.identity);
+        m_BtnReset.SetActive(false);
         yield return new WaitForSeconds(1.5f);
         Manager.Add(GAMEOVERController.GAMEOVER_SCENE_NAME);
     }

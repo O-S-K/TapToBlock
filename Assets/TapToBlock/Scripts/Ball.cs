@@ -8,7 +8,9 @@ public class Ball : MonoBehaviour
     public static Ball instance;
     public Rigidbody2D m_Rigidbody;
 
+    [SerializeField] Animator animatorPlayer;
     [SerializeField] GameObject m_SpashShit;
+    [SerializeField] ParticleSystem m_ParticleDead;
     [SerializeField] Splatter m_Splatter;
 
     // Check lần thứ 2 chạm Block thi mới spawn splash
@@ -49,10 +51,12 @@ public class Ball : MonoBehaviour
         if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Finish"))
         {
             StartCoroutine(GameManager.instance.WaitNextStage());
-        }   
+        }
 
         if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Dead"))
         {
+            animatorPlayer.CrossFadeInFixedTime("Player_Dead", 0.1f);
+            Instantiate(m_ParticleDead, transform.position, Quaternion.identity);
             StartCoroutine(GameManager.instance.GameOver());
         }
     }

@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 7165218421950800964}
   - component: {fileID: 7165218421950800967}
   - component: {fileID: 7165218421950800984}
+  - component: {fileID: 6029989340369741224}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -95,13 +96,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3f98c584357b64c80225e5b5ee32d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDead: 0
+  m_Rigidbody: {fileID: 7165218421950800984}
+  animatorPlayer: {fileID: 6029989340369741224}
   m_SpashShit: {fileID: 5884268314444299919, guid: 8522f376d4cadf64595df6af1c6d2119,
     type: 3}
-  m_Splatter: {fileID: 11466376, guid: 273acd9f54f187a48a419d6b81376337, type: 3}
-  m_Rigidbody: {fileID: 7165218421950800984}
-  m_DeadBall: {fileID: 4526507764487785995, guid: 93fe0ec723701224ca383fb3d0bd8c20,
+  m_ParticleDead: {fileID: 4526507764487785995, guid: 93fe0ec723701224ca383fb3d0bd8c20,
     type: 3}
+  m_Splatter: {fileID: 11466376, guid: 273acd9f54f187a48a419d6b81376337, type: 3}
 --- !u!58 &7165218421950800967
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -139,3 +140,22 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!95 &6029989340369741224
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165218421950800985}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 7368c0e10134fd844ae983630866fe75, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

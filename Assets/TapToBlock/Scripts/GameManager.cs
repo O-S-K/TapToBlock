@@ -6,10 +6,12 @@ using SS.View;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+    public static int indexStage = 1;
+
     [HideInInspector] public Stage stage;
-    public static int indexStage = 50;
 
     [SerializeField] GameObject m_BtnReset;
+    [SerializeField] GameObject m_ParticleFinish;
 
 
     void Awake()
@@ -31,11 +33,11 @@ public class GameManager : MonoBehaviour
     {
         //run animation win
         SetBallWhenDead();
+        m_ParticleFinish.SetActive(true);
 
-        if(indexStage < 50)
+        if (indexStage < 50)
         {
             indexStage += 1;
-            Debug.Log(indexStage);
         }
         else
         {
@@ -43,16 +45,17 @@ public class GameManager : MonoBehaviour
         }
 
         m_BtnReset.SetActive(false);
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1);
         Manager.Add(WINGAMEController.WINGAME_SCENE_NAME);
     }
 
     public IEnumerator GameOver()
     {
         //run animation dead
+
         SetBallWhenDead();
         m_BtnReset.SetActive(false);
-        yield return new WaitForSeconds(1.5f);
+        yield return new WaitForSeconds(1);
         Manager.Add(GAMEOVERController.GAMEOVER_SCENE_NAME);
     }
 

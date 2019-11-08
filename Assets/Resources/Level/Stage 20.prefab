@@ -412,14 +412,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6886935817453885594, guid: b6468e15cf5f1da4d94dabae43d489ef,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 6
-      objectReference: {fileID: 0}
     - target: {fileID: 6886935817453885595, guid: b6468e15cf5f1da4d94dabae43d489ef,
         type: 3}
       propertyPath: m_Size.x
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886935817453885594, guid: b6468e15cf5f1da4d94dabae43d489ef,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
       value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -712,6 +712,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Triangle
       objectReference: {fileID: 0}
+    - target: {fileID: 8764995837980774339, guid: 3e85bbb05893e7841b11cc8166d1ae95,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 8764995837980774342, guid: 3e85bbb05893e7841b11cc8166d1ae95,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -780,6 +785,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Triangle (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 8764995837980774339, guid: 3e85bbb05893e7841b11cc8166d1ae95,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 8764995837980774342, guid: 3e85bbb05893e7841b11cc8166d1ae95,
         type: 3}
@@ -1077,6 +1087,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block Dynamic (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 5075968545399718216, guid: e4afc691d512d524fa255b50e2092d01,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 5075968545399718220, guid: e4afc691d512d524fa255b50e2092d01,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1214,6 +1229,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Block Dynamic (19)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5075968545399718216, guid: e4afc691d512d524fa255b50e2092d01,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5075968545399718220, guid: e4afc691d512d524fa255b50e2092d01,
         type: 3}
@@ -1462,6 +1482,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Block Dynamic (13)
       objectReference: {fileID: 0}
+    - target: {fileID: 5075968545399718216, guid: e4afc691d512d524fa255b50e2092d01,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
+      objectReference: {fileID: 0}
     - target: {fileID: 5075968545399718220, guid: e4afc691d512d524fa255b50e2092d01,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1619,6 +1644,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Block Dynamic (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5075968545399718216, guid: e4afc691d512d524fa255b50e2092d01,
+        type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     - target: {fileID: 5075968545399718220, guid: e4afc691d512d524fa255b50e2092d01,
         type: 3}

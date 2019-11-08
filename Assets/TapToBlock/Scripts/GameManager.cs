@@ -6,11 +6,13 @@ using SS.View;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+
     public static int indexStage = 1;
+    
 
     [HideInInspector] public Stage stage;
-
     [SerializeField] GameObject m_BtnReset;
+    [SerializeField] GameObject m_BtnSound;
     [SerializeField] GameObject m_ParticleFinish;
 
 
@@ -33,6 +35,7 @@ public class GameManager : MonoBehaviour
     {
         //run animation win
         SetBallWhenDead();
+        m_BtnSound.SetActive(false);
         m_ParticleFinish.SetActive(true);
 
         if (indexStage < 50)
@@ -54,6 +57,7 @@ public class GameManager : MonoBehaviour
         //run animation dead
 
         SetBallWhenDead();
+        m_BtnSound.SetActive(false);
         m_BtnReset.SetActive(false);
         yield return new WaitForSeconds(1);
         Manager.Add(GAMEOVERController.GAMEOVER_SCENE_NAME);

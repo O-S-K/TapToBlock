@@ -7,12 +7,11 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
-    public static int indexStage = 1;
+    public int indexStage = 1;
     
-
     [HideInInspector] public Stage stage;
-    [SerializeField] GameObject m_BtnReset;
-    [SerializeField] GameObject m_BtnSound;
+
+    [SerializeField] GameObject m_PanelButton;
     [SerializeField] GameObject m_ParticleFinish;
 
 
@@ -23,6 +22,8 @@ public class GameManager : MonoBehaviour
 
     void Start()
     {
+        indexStage = PlayerPrefs.GetInt("SaveIdStage", 1);
+
         LoadStagePrefab(indexStage);
     }
 
@@ -35,19 +36,21 @@ public class GameManager : MonoBehaviour
     {
         //run animation win
         SetBallWhenDead();
-        m_BtnSound.SetActive(false);
+        m_PanelButton.SetActive(false);
         m_ParticleFinish.SetActive(true);
 
         if (indexStage < 50)
         {
             indexStage += 1;
+            PlayerPrefs.SetInt("SaveIdStage", indexStage);
         }
         else
         {
             Manager.Load(PopupComingSoonController.POPUPCOMINGSOON_SCENE_NAME);
         }
 
-        m_BtnReset.SetActive(false);
+      
+        PlayerPrefs.Save();
         yield return new WaitForSeconds(1);
         Manager.Add(WINGAMEController.WINGAME_SCENE_NAME);
     }
@@ -56,9 +59,8 @@ public class GameManager : MonoBehaviour
     {
         //run animation dead
 
-        SetBallWhenDead();
-        m_BtnSound.SetActive(false);
-        m_BtnReset.SetActive(false);
+        m_PanelButton.SetActive(false);
+        
         yield return new WaitForSeconds(1);
         Manager.Add(GAMEOVERController.GAMEOVER_SCENE_NAME);
     }

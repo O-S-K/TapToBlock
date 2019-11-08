@@ -927,6 +927,21 @@ PrefabInstance:
       propertyPath: m_fontSizeBase
       value: 45
       objectReference: {fileID: 0}
+    - target: {fileID: 6217595076518125182, guid: e3d749118185a6f48a0f4e143bf6f6f3,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1387960}
+    - target: {fileID: 6217595076518125182, guid: e3d749118185a6f48a0f4e143bf6f6f3,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: RatingGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 6217595076518125182, guid: e3d749118185a6f48a0f4e143bf6f6f3,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e3d749118185a6f48a0f4e143bf6f6f3, type: 3}
 --- !u!224 &1932987956 stripped

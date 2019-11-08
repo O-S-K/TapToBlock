@@ -11,4 +11,14 @@ public class PopupComingSoonController : Controller
     {
         return POPUPCOMINGSOON_SCENE_NAME;
     }
+
+    public void RatingGame()
+    {
+        NativeReviewRequest.RequestReview(Const.APP_URL);
+    }
+
+    public void ReplayLevel()
+    {
+        Manager.Load(GAMEController.GAME_SCENE_NAME);
+    }
 }

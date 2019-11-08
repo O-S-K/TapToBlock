@@ -62,7 +62,7 @@ public class GameManager : MonoBehaviour
             indexStageComplete += 1;
         }
 
-        FbaLogEvent.LogGameEvent("win_game", indexStage);
+        FbaLogEvent.LogGameEvent("win_game", indexStage.ToString());
 
         PlayerPrefs.Save();
         yield return new WaitForSeconds(1);

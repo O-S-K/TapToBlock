@@ -27,6 +27,7 @@ public class LoadingController : Controller
         }
         else
         {
+            FirebaseManager.CheckGooglePlayService();
             Manager.Load(GAMEController.GAME_SCENE_NAME);
             this.enabled = false;
         }

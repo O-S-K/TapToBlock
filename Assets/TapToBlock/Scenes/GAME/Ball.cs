@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using SS.View;
+using DG.Tweening;
 
 public class Ball : MonoBehaviour
 {
@@ -9,6 +10,7 @@ public class Ball : MonoBehaviour
     public Rigidbody2D m_Rigidbody;
 
     [SerializeField] Animator animatorPlayer;
+    [SerializeField] Transform m_Target;
     [SerializeField] GameObject m_SpashShit;
     [SerializeField] ParticleSystem m_ParticleDead;
     [SerializeField] Splatter m_Splatter;

@@ -522,7 +522,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: a2c7dca7fd7daa647814f5e16e07c4fc,
+      objectReference: {fileID: 21300000, guid: a6dce0ecb5656d546b74bc28a69a97f0,
         type: 3}
     - target: {fileID: 7165386908562586397, guid: 4acc9b446765eaa4d880592b2f59161a,
         type: 3}
@@ -537,12 +537,12 @@ PrefabInstance:
     - target: {fileID: 7165386908562586397, guid: 4acc9b446765eaa4d880592b2f59161a,
         type: 3}
       propertyPath: m_Color.g
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7165386908562586397, guid: 4acc9b446765eaa4d880592b2f59161a,
         type: 3}
       propertyPath: m_Color.b
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4acc9b446765eaa4d880592b2f59161a, type: 3}
@@ -618,7 +618,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6e46026c5f1e8554cb364f4b9ff05662, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  indexStage: 1
+  indexStage: 49
   stage: {fileID: 0}
   m_PanelButton: {fileID: 2089090676}
   m_ParticleFinish: {fileID: 1004458504}

@@ -6,17 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/TapToBlock/Scenes/GAME/GAME.unity
-    guid: fa081bef5ca3d99409e064b9a166704d
-  - enabled: 1
-    path: Assets/TapToBlock/Scenes/GAMEOVER/GAMEOVER.unity
-    guid: b881555aa152a2b4bb4db43994764d2d
-  - enabled: 1
     path: Assets/TapToBlock/Scenes/Loading/Loading.unity
     guid: b5ad3353a9441314db1625f93e8359a0
   - enabled: 1
+    path: Assets/TapToBlock/Scenes/GAME/GAME.unity
+    guid: fa081bef5ca3d99409e064b9a166704d
+  - enabled: 1
     path: Assets/TapToBlock/Scenes/WINGAME/WINGAME.unity
     guid: 7fa5a8dff3cfbf846819896459805059
+  - enabled: 1
+    path: Assets/TapToBlock/Scenes/GAMEOVER/GAMEOVER.unity
+    guid: b881555aa152a2b4bb4db43994764d2d
   - enabled: 1
     path: Assets/TapToBlock/Scenes/PopupComingSoon/PopupComingSoon.unity
     guid: d9dde9406a7054e4ab37ebe6495b3b76

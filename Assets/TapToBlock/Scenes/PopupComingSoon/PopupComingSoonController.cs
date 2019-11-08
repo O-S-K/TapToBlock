@@ -19,6 +19,8 @@ public class PopupComingSoonController : Controller
 
     public void ReplayLevel()
     {
+        GameManager.isCompleteLevel = true;
+        GameManager.indexStageComplete = 1;
         Manager.Load(GAMEController.GAME_SCENE_NAME);
     }
 }

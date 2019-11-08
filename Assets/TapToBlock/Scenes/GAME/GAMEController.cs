@@ -11,12 +11,16 @@ public class GAMEController : Controller
     public const string GAME_SCENE_NAME = "GAME";
     public static GAMEController instance;
 
-    [SerializeField] GameObject m_PlaySoundIcon;
-    [SerializeField] GameObject m_MuteSoundIcon;
+    const string LEVEL_TEXT = "LEVEL {0}";
+
+
+    //[SerializeField] GameObject m_PlaySoundIcon;
+    //[SerializeField] GameObject m_MuteSoundIcon;
 
     [SerializeField] TextMeshProUGUI levetext;
 
-    bool isPlaySound;
+
+    //bool isPlaySound;
 
     public override string SceneName()
     {
@@ -30,12 +34,12 @@ public class GAMEController : Controller
 
     private void Start()
     {
-        levetext.text = "LEVEL: " + PlayerPrefs.GetInt("SaveIdStage", 1);
+        levetext.text = string.Format(LEVEL_TEXT, GameManager.isCompleteLevel ? GameManager.indexStageComplete : PlayerPrefs.GetInt("SaveIdStage", 1));
 
-        isPlaySound = PlayerPrefs.GetInt("Sound", 1) == 1;
-        AudioListener.volume = PlayerPrefs.GetInt("Sound", 1);
-        m_PlaySoundIcon.SetActive(isPlaySound);
-        m_MuteSoundIcon.SetActive(!isPlaySound);
+        //isPlaySound = PlayerPrefs.GetInt("Sound", 1) == 1;
+        //AudioListener.volume = PlayerPrefs.GetInt("Sound", 1);
+        //m_PlaySoundIcon.SetActive(isPlaySound);
+        //m_MuteSoundIcon.SetActive(!isPlaySound);
     }
 
     public void ReplayGame()
@@ -56,24 +60,24 @@ public class GAMEController : Controller
         Manager.Load(GAME_SCENE_NAME);
     }
 
-    public void SetSound()
-    {
-        if (!isPlaySound)
-        {
-            AudioListener.volume = 1;
-            PlayerPrefs.SetInt("Sound", 1);
-            isPlaySound = true;
-        }
-        else
-        {
-            AudioListener.volume = 0;
-            PlayerPrefs.SetInt("Sound", 0);
-            isPlaySound = false;
-        }
+    //public void SetSound()
+    //{
+    //    if (!isPlaySound)
+    //    {
+    //        AudioListener.volume = 1;
+    //        PlayerPrefs.SetInt("Sound", 1);
+    //        isPlaySound = true;
+    //    }
+    //    else
+    //    {
+    //        AudioListener.volume = 0;
+    //        PlayerPrefs.SetInt("Sound", 0);
+    //        isPlaySound = false;
+    //    }
 
-        m_PlaySoundIcon.SetActive(isPlaySound);
-        m_MuteSoundIcon.SetActive(!isPlaySound);
-        SoundManager.instance.audioSound.PlayOneShot(SoundManager.instance.buttonSound);
-        PlayerPrefs.Save();
-    }
+    //    m_PlaySoundIcon.SetActive(isPlaySound);
+    //    m_MuteSoundIcon.SetActive(!isPlaySound);
+    //    SoundManager.instance.audioSound.PlayOneShot(SoundManager.instance.buttonSound);
+    //    PlayerPrefs.Save();
+    //}
 }

@@ -153,8 +153,6 @@ MonoBehaviour:
   m_Camera: {fileID: 1734978665}
   FullScreen: 1
   Animation: {fileID: 1997761294}
-  m_PlaySoundIcon: {fileID: 918020301}
-  m_MuteSoundIcon: {fileID: 1610824192}
   levetext: {fileID: 674849194}
 --- !u!4 &1387961
 Transform:
@@ -443,7 +441,7 @@ PrefabInstance:
     - target: {fileID: 7165386908562586399, guid: 4acc9b446765eaa4d880592b2f59161a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -75
+      value: 75
       objectReference: {fileID: 0}
     - target: {fileID: 7165386908562586399, guid: 4acc9b446765eaa4d880592b2f59161a,
         type: 3}
@@ -463,7 +461,7 @@ PrefabInstance:
     - target: {fileID: 7165386908562586399, guid: 4acc9b446765eaa4d880592b2f59161a,
         type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7165386908562586399, guid: 4acc9b446765eaa4d880592b2f59161a,
         type: 3}
@@ -473,7 +471,7 @@ PrefabInstance:
     - target: {fileID: 7165386908562586399, guid: 4acc9b446765eaa4d880592b2f59161a,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7165386908562586399, guid: 4acc9b446765eaa4d880592b2f59161a,
         type: 3}
@@ -601,7 +599,6 @@ GameObject:
   m_Component:
   - component: {fileID: 414614374}
   - component: {fileID: 414614373}
-  - component: {fileID: 414614375}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -639,24 +636,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &414614375
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 414614372}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cb57e5e928ac41e489a927dc78b964d8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  audioSound: {fileID: 0}
-  hitBlockSound: {fileID: 0}
-  buttonSound: {fileID: 0}
-  buttonSoundHint: {fileID: 0}
-  winSound: {fileID: 0}
-  gameOverSound: {fileID: 0}
 --- !u!1001 &578003667
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -727,7 +706,7 @@ PrefabInstance:
     - target: {fileID: 7165386908562586399, guid: 4acc9b446765eaa4d880592b2f59161a,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -185
+      value: -75
       objectReference: {fileID: 0}
     - target: {fileID: 7165386908562586399, guid: 4acc9b446765eaa4d880592b2f59161a,
         type: 3}
@@ -1004,6 +983,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: ButtonSound Variant
+      objectReference: {fileID: 0}
+    - target: {fileID: 7165386908562586392, guid: 4acc9b446765eaa4d880592b2f59161a,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7165386908562586399, guid: 4acc9b446765eaa4d880592b2f59161a,
         type: 3}
@@ -1314,12 +1298,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7165386908562586398, guid: 4acc9b446765eaa4d880592b2f59161a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4acc9b446765eaa4d880592b2f59161a, type: 3}
---- !u!1 &918020301 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7165386908562586392, guid: 4acc9b446765eaa4d880592b2f59161a,
-    type: 3}
-  m_PrefabInstance: {fileID: 918020300}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &932985006
 GameObject:
   m_ObjectHideFlags: 0
@@ -1655,17 +1633,17 @@ PrefabInstance:
     - target: {fileID: 7165386908562586399, guid: 4acc9b446765eaa4d880592b2f59161a,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.99985135
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7165386908562586399, guid: 4acc9b446765eaa4d880592b2f59161a,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.99985135
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7165386908562586399, guid: 4acc9b446765eaa4d880592b2f59161a,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.99985135
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7165386908562586398, guid: 4acc9b446765eaa4d880592b2f59161a,
         type: 3}
@@ -1897,12 +1875,6 @@ PrefabInstance:
     m_RemovedComponents:
     - {fileID: 7165386908562586398, guid: 4acc9b446765eaa4d880592b2f59161a, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 4acc9b446765eaa4d880592b2f59161a, type: 3}
---- !u!1 &1610824192 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7165386908562586392, guid: 4acc9b446765eaa4d880592b2f59161a,
-    type: 3}
-  m_PrefabInstance: {fileID: 1610824191}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1734978663
 GameObject:
   m_ObjectHideFlags: 0

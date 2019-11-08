@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "598625177073",
+    "firebase_url": "https://tap-break.firebaseio.com",
+    "project_id": "tap-break",
+    "storage_bucket": "tap-break.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:598625177073:android:18ad32df9421fc194cc850",
+        "android_client_info": {
+          "package_name": "vn.zenga.tapbreak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "598625177073-k8of4grd6ppsrhb5an8ado1t4ubcr35r.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDcmdn01Md7gnbaeTM_ZvbOC55L0-S_w6g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "598625177073-k8of4grd6ppsrhb5an8ado1t4ubcr35r.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "598625177073-i184naide7ugkamtk5e32ss6vr0h2fjt.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "vn.zenga.tapbreak"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

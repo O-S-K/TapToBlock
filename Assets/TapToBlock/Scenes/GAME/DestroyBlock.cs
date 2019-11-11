@@ -9,11 +9,12 @@ public class DestroyBlock : MonoBehaviour
 
     void OnMouseDown()
     {
-        Instantiate(m_ParticleBlock, transform.position, Quaternion.identity);
-        //transform.DOScale(0, .1f).OnComplete(() =>
-        //{
+        if (GameManager.instance.isWin || GameManager.instance.isLose) { }
+        else
+        {
+            Instantiate(m_ParticleBlock, transform.position, Quaternion.identity);
             Destroy(gameObject);
-        //});
+        }
     }
 
     void OnCollisionEnter2D(Collision2D collision)

@@ -8,10 +8,10 @@ public class SoundManager : MonoBehaviour
 
     [Header("Audio Atributes")]
     public AudioSource audioSound;
-    public AudioClip hitBlockSound;
+    public AudioClip splashFallSound;
     public AudioClip buttonSound;
-    public AudioClip buttonSoundHint;
-    public AudioClip winSound;
+    public AudioClip buttonSoundSkip;
+    public AudioClip winGameSound;
     public AudioClip gameOverSound;
 
     private void Awake()

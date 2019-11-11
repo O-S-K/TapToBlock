@@ -20,19 +20,7 @@ SpriteAtlas:
       readable: 0
       crunchedCompression: 0
       sRGB: 1
-    platformSettings:
-    - serializedVersion: 3
-      m_BuildTarget: DefaultTexturePlatform
-      m_MaxTextureSize: 2048
-      m_ResizeAlgorithm: 0
-      m_TextureFormat: -1
-      m_TextureCompression: 1
-      m_CompressionQuality: 50
-      m_CrunchedCompression: 0
-      m_AllowsAlphaSplitting: 0
-      m_Overridden: 0
-      m_AndroidETC2FallbackOverride: 0
-      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    platformSettings: []
     packingSettings:
       serializedVersion: 2
       padding: 4
@@ -42,56 +30,30 @@ SpriteAtlas:
       enableTightPacking: 0
     variantMultiplier: 1
     packables:
-    - {fileID: 102900000, guid: 832b2f22a4261e94b82d0b736a5c15e6, type: 3}
-    totalSpriteSurfaceArea: 780113
+    - {fileID: 102900000, guid: 2449ee4d78248d34b82da2b889212602, type: 3}
+    totalSpriteSurfaceArea: 104396
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
-  - {fileID: 21300000, guid: 7a71d2f0b972ee242b85be0f6717c154, type: 3}
   - {fileID: 21300000, guid: ea344281994c649499d9da5f0d08ff0c, type: 3}
   - {fileID: 21300000, guid: 4a5d6c32182492742ac0834877145dcb, type: 3}
-  - {fileID: 21300000, guid: cda9da53c57b1e84daffcdcb8fd7445b, type: 3}
   - {fileID: 21300000, guid: 02a6c9a358a9a16479c7c33688324060, type: 3}
   - {fileID: 21300000, guid: 497d54a4faeef69469af0546111c60e7, type: 3}
-  - {fileID: 21300000, guid: 283624952c876d742955f4f29475cf58, type: 3}
-  - {fileID: 21300000, guid: 9ac8ecd5c5879cf428b5a34e8849aaf8, type: 3}
-  - {fileID: 21300000, guid: 0bfe2437875b38b4b8ca4138c3a3f021, type: 3}
-  - {fileID: 21300000, guid: 741603a76acdfa84c90f3fd5b486ae40, type: 3}
   - {fileID: 21300000, guid: d2148fe7e122b044986e3bb72d3dcc36, type: 3}
-  - {fileID: 21300000, guid: e9b9ebf7a4b81534bb5ac8b4df5cf88d, type: 3}
-  - {fileID: 21300000, guid: 85559ff79e875f646bab3fbb5e745ca5, type: 3}
   - {fileID: 21300000, guid: a50f3a5833b216a46802bcd47fd365eb, type: 3}
-  - {fileID: 21300000, guid: bc26857a0b9b9ac4e9dd914d01f78bdb, type: 3}
   - {fileID: 21300000, guid: 0e5e0cfbc29672b4b9bb70dca2c6b1be, type: 3}
   - {fileID: 21300000, guid: 07a97b0c72eb7ad4db5bc069587b0de2, type: 3}
-  - {fileID: 21300000, guid: 4260229c1289ecc41b0555b7a6110941, type: 3}
-  - {fileID: 21300000, guid: a6dce0ecb5656d546b74bc28a69a97f0, type: 3}
-  - {fileID: 21300000, guid: 3a6a6a6e65bacfb458c5fe98248e3f99, type: 3}
-  - {fileID: 21300000, guid: ba80368eb37e3064ab7f0138d84b8775, type: 3}
   - {fileID: 21300000, guid: 5e17b9fefd8dba04d8e4145083c46ca4, type: 3}
   - {fileID: 21300000, guid: f4e9f98f0a5965249abe87581720467d, type: 3}
   m_PackedSpriteNamesToIndex:
-  - Tay tha
   - BoxSlide
   - BlockDynamic
-  - pop up (1)
   - MayBug
   - Ground
-  - Tay giu
-  - level complete
-  - Shit_3
-  - Shit_4
   - Shit
-  - Shit_5
-  - Button_Hint
   - Spike
-  - Shit_2
   - Trap
   - Triangle
-  - next button copy
-  - back button copy
-  - Shit_1
-  - Shit_6
   - Stone
   - BoxStatic
   m_Tag: AtlasGame

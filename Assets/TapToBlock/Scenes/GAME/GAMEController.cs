@@ -19,7 +19,6 @@ public class GAMEController : Controller
 
     [SerializeField] TextMeshProUGUI levetext;
 
-
     //bool isPlaySound;
 
     public override string SceneName()
@@ -44,6 +43,12 @@ public class GAMEController : Controller
 
     public void ReplayGame()
     {
+        //SoundManager.instance.audioSound.PlayOneShot(SoundManager.instance.buttonSound);
+        if (!GameManager.isCompleteLevel)
+        {
+            GameManager.countDieShowSKip += 1;
+            PlayerPrefs.SetInt("SaveIdStage", GameManager.instance.indexStage);
+        }
         Manager.Load(GAME_SCENE_NAME);
     }
 
@@ -55,6 +60,10 @@ public class GAMEController : Controller
 
     public void NextStage()
     {
+        //SoundManager.instance.audioSound.PlayOneShot(SoundManager.instance.buttonSound);
+        GameManager.instance.m_SkipLevel.SetActive(false);
+        GameManager.countDieShowSKip = 0;
+
         GameManager.instance.indexStage += 1;
         PlayerPrefs.SetInt("SaveIdStage", GameManager.instance.indexStage);
         Manager.Load(GAME_SCENE_NAME);

@@ -67,15 +67,15 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6886935817453885594, guid: b6468e15cf5f1da4d94dabae43d489ef,
-        type: 3}
-      propertyPath: m_SpriteTilingProperty.newSize.x
-      value: 9
-      objectReference: {fileID: 0}
     - target: {fileID: 6886935817453885595, guid: b6468e15cf5f1da4d94dabae43d489ef,
         type: 3}
       propertyPath: m_Size.x
-      value: 9
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6886935817453885594, guid: b6468e15cf5f1da4d94dabae43d489ef,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 8
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b6468e15cf5f1da4d94dabae43d489ef, type: 3}
@@ -482,12 +482,12 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 2655857348399344348, guid: 548a88939336bd64a88ee773a69bff6e,
+    - target: {fileID: 836160558731142871, guid: 548a88939336bd64a88ee773a69bff6e,
         type: 3}
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 836160558731142871, guid: 548a88939336bd64a88ee773a69bff6e,
+    - target: {fileID: 2655857348399344348, guid: 548a88939336bd64a88ee773a69bff6e,
         type: 3}
       propertyPath: m_RootOrder
       value: 5

@@ -97,8 +97,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Rigidbody: {fileID: 7165218421950800984}
+  circleCollider2D: {fileID: 7165218421950800967}
   animatorPlayer: {fileID: 6029989340369741224}
   m_SpashShit: {fileID: 5884268314444299919, guid: 8522f376d4cadf64595df6af1c6d2119,
+    type: 3}
+  m_Target: {fileID: 2477373465226740907, guid: a822070107aa45040923b699a6b60085,
     type: 3}
   m_ParticleDead: {fileID: 4526507764487785995, guid: 93fe0ec723701224ca383fb3d0bd8c20,
     type: 3}

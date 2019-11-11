@@ -6,15 +6,33 @@ using SS.View;
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+
+    // If level IndexStage = 50 else run new Index is indexStageComplete
     public static bool isCompleteLevel = false;
     public static int indexStageComplete = 1;
 
-    [HideInInspector] public int indexStage = 1;
-    [HideInInspector] public Stage stage;
+    /// <summary>
+    /// CountLose >= 2 Show Button Skip Level
+    /// </summary>
+    public static int countDieShowSKip = 0;
 
+    [HideInInspector] public Stage stage;
+    [HideInInspector] public int indexStage = 1;
+
+    /// <summary>
+    /// If Win Else Can't Touch Destroy Block
+    /// </summary>
+    [HideInInspector] public bool isWin = false;
+    [HideInInspector] public bool isLose = false;
+
+
+    public GameObject m_SkipLevel;
+
+    /// <summary>
+    /// When Win Or Lose else Hide buttons in Scene
+    /// </summary>
     [SerializeField] GameObject m_PanelButton;
     [SerializeField] GameObject m_ParticleFinish;
-
 
     void Awake()
     {
@@ -25,6 +43,12 @@ public class GameManager : MonoBehaviour
     {
         indexStage = PlayerPrefs.GetInt("SaveIdStage", 1);
 
+        if (countDieShowSKip >= 2)
+        {
+            //SoundManager.instance.audioSound.PlayOneShot(SoundManager.instance.buttonSoundSkip);
+            m_SkipLevel.SetActive(true);
+        }
+
         if (isCompleteLevel)
         {
             indexStage = indexStageComplete;
@@ -32,7 +56,7 @@ public class GameManager : MonoBehaviour
 
         if (indexStage > Const.NUM_TOTAL_STAGE)
         {
-            Manager.Load(PopupComingSoonController.POPUPCOMINGSOON_SCENE_NAME);
+            Manager.Add(PopupComingSoonController.POPUPCOMINGSOON_SCENE_NAME);
         }
         else
         {
@@ -47,10 +71,12 @@ public class GameManager : MonoBehaviour
 
     public IEnumerator WaitNextStage()
     {
-        SetComponetBall();
+        //SoundManager.instance.audioSound.PlayOneShot(SoundManager.instance.winGameSound);
+        countDieShowSKip = 0;
+
+        isWin = true;
         m_PanelButton.SetActive(false);
         m_ParticleFinish.SetActive(true);
-
 
         if (!isCompleteLevel)
         {
@@ -71,16 +97,10 @@ public class GameManager : MonoBehaviour
 
     public IEnumerator GameOver()
     {
+        //SoundManager.instance.audioSound.PlayOneShot(SoundManager.instance.gameOverSound);
+        isLose = true;
         m_PanelButton.SetActive(false);
-
         yield return new WaitForSeconds(1);
         Manager.Add(GAMEOVERController.GAMEOVER_SCENE_NAME);
-    }
-
-    void SetComponetBall()
-    {
-        Ball.instance.m_Rigidbody.isKinematic = true;
-        Ball.instance.m_Rigidbody.velocity = Vector3.zero;
-        Ball.instance.m_Rigidbody.angularVelocity = 0;
     }
 }

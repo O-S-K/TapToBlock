@@ -8,6 +8,7 @@ TagManager:
   - Dead
   - Block
   - Spike
+  - Target
   layers:
   - Default
   - TransparentFX

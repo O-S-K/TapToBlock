@@ -8,22 +8,27 @@ public class Ball : MonoBehaviour
 {
     public static Ball instance;
     public Rigidbody2D m_Rigidbody;
-
+    [SerializeField] CircleCollider2D circleCollider2D;
     [SerializeField] Animator animatorPlayer;
-    [SerializeField] Transform m_Target;
     [SerializeField] GameObject m_SpashShit;
     [SerializeField] ParticleSystem m_ParticleDead;
     [SerializeField] Splatter m_Splatter;
 
-    // Check lần thứ 2 chạm Block thi mới spawn splash
+    GameObject m_Target;
+
     int countIsGround = 0;
-    // check thời gian dơi của Shit khi ra ngoài mặt đất
     float timer = 1f;
     bool isGround = false;
+
 
     void Awake()
     {
         instance = this;
+    }
+
+    void Start()
+    {
+        m_Target = GameObject.FindGameObjectWithTag("Target");
     }
 
     void Update()
@@ -52,12 +57,22 @@ public class Ball : MonoBehaviour
 
         if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Finish"))
         {
+            circleCollider2D.isTrigger = true;
+            transform.DOMove(m_Target.transform.position, .5F).OnComplete(() =>
+            {
+                m_Rigidbody.velocity = Vector2.zero;
+                m_Rigidbody.gravityScale = 0;
+            });
+
             StartCoroutine(GameManager.instance.WaitNextStage());
         }
 
         if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Dead"))
         {
+            GameManager.countDieShowSKip += 1;
+
             animatorPlayer.CrossFadeInFixedTime("Player_Dead", 0.1f);
+            circleCollider2D.isTrigger = true;
             Instantiate(m_ParticleDead, transform.position, Quaternion.identity);
             StartCoroutine(GameManager.instance.GameOver());
         }
@@ -76,9 +91,10 @@ public class Ball : MonoBehaviour
         if (timer <= 0 && countIsGround == 2)
         {
             Instantiate(m_SpashShit, transform.position, Quaternion.identity);
-
+            //SoundManager.instance.audioSound.PlayOneShot(SoundManager.instance.splashFallSound);
             timer = 1f;
             isGround = false;
         }
     }
+
 }

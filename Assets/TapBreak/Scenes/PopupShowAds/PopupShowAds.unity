@@ -146,13 +146,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 1387959}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e9e2aa3f65e56ff46a8d2d4803a06ae4, type: 3}
+  m_Script: {fileID: 11500000, guid: 05a89d36839d0ce4381647b34c13ca56, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   m_Canvas: {fileID: 932985009}
   m_Camera: {fileID: 0}
   FullScreen: 0
   Animation: {fileID: 1997761294}
+  m_Title: {fileID: 0}
   m_Text: {fileID: 1329833380}
   m_OkButton: {fileID: 1586549474}
   m_YesButton: {fileID: 1639195472}

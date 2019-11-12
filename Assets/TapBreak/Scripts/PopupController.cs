@@ -32,8 +32,7 @@ public class PopupData
 
 public class PopupController : Controller
 {
-    public const string POPUP_SCENE_NAME = "PopupShowAds";
-
+    [SerializeField] protected TextMeshProUGUI m_Title;
     [SerializeField] protected TextMeshProUGUI m_Text;
     [SerializeField] protected GameObject m_OkButton;
     [SerializeField] protected GameObject m_YesButton;
@@ -44,7 +43,7 @@ public class PopupController : Controller
 
     public override string SceneName()
     {
-        return POPUP_SCENE_NAME;
+        return "Popup";
     }
 
     public override void OnActive(object data)
@@ -104,6 +103,7 @@ public class PopupController : Controller
     {
         Manager.Close();
         m_OkTapped = true;
+
     }
 
     public virtual void CancelButtonTap()

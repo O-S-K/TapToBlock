@@ -1,0 +1,153 @@
+
+bọ 12.png
+size: 512,128
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+Layer 7
+  rotate: false
+  xy: 2, 25
+  size: 137, 39
+  orig: 137, 39
+  offset: 0, 0
+  index: -1
+Layer 8
+  rotate: false
+  xy: 2, 66
+  size: 159, 60
+  orig: 159, 60
+  offset: 0, 0
+  index: -1
+buồn
+  rotate: false
+  xy: 304, 36
+  size: 29, 15
+  orig: 29, 15
+  offset: 0, 0
+  index: -1
+chân 1
+  rotate: false
+  xy: 355, 91
+  size: 47, 35
+  orig: 47, 35
+  offset: 0, 0
+  index: -1
+chân 2
+  rotate: true
+  xy: 404, 103
+  size: 23, 36
+  orig: 23, 36
+  offset: 0, 0
+  index: -1
+cười
+  rotate: false
+  xy: 271, 36
+  size: 31, 15
+  orig: 31, 15
+  offset: 0, 0
+  index: -1
+dote 1
+  rotate: false
+  xy: 140, 10
+  size: 12, 13
+  orig: 12, 13
+  offset: 0, 0
+  index: -1
+dote 2
+  rotate: false
+  xy: 335, 37
+  size: 14, 14
+  orig: 14, 14
+  offset: 0, 0
+  index: -1
+eye 1
+  rotate: false
+  xy: 442, 98
+  size: 28, 28
+  orig: 28, 28
+  offset: 0, 0
+  index: -1
+eye 2
+  rotate: false
+  xy: 355, 58
+  size: 32, 31
+  orig: 32, 31
+  offset: 0, 0
+  index: -1
+lm 1
+  rotate: false
+  xy: 389, 61
+  size: 10, 9
+  orig: 10, 9
+  offset: 0, 0
+  index: -1
+lm 2
+  rotate: false
+  xy: 404, 91
+  size: 10, 10
+  orig: 10, 10
+  offset: 0, 0
+  index: -1
+lưỡi
+  rotate: true
+  xy: 389, 72
+  size: 17, 12
+  orig: 17, 12
+  offset: 0, 0
+  index: -1
+mắt 1
+  rotate: false
+  xy: 116, 5
+  size: 22, 18
+  orig: 22, 18
+  offset: 0, 0
+  index: -1
+mắt 2
+  rotate: true
+  xy: 141, 25
+  size: 22, 18
+  orig: 22, 18
+  offset: 0, 0
+  index: -1
+râu 1
+  rotate: true
+  xy: 141, 49
+  size: 15, 20
+  orig: 15, 20
+  offset: 0, 0
+  index: -1
+râu 2
+  rotate: false
+  xy: 2, 3
+  size: 87, 20
+  orig: 87, 20
+  offset: 0, 0
+  index: -1
+tay 1
+  rotate: true
+  xy: 91, 2
+  size: 21, 23
+  orig: 21, 23
+  offset: 0, 0
+  index: -1
+tay 2
+  rotate: false
+  xy: 472, 108
+  size: 31, 18
+  orig: 31, 18
+  offset: 0, 0
+  index: -1
+thân
+  rotate: true
+  xy: 163, 35
+  size: 91, 106
+  orig: 91, 106
+  offset: 0, 0
+  index: -1
+đầu
+  rotate: false
+  xy: 271, 53
+  size: 82, 73
+  orig: 82, 73
+  offset: 0, 0
+  index: -1

@@ -67,6 +67,8 @@ public class GameManager : MonoBehaviour
         countDieShowSkip = 0;
 
         isWin = true;
+        MaybugController.instance.SetAnimationMaybug();
+
         m_PanelButton.SetActive(false);
         m_ParticleFinish.SetActive(true);
 
@@ -145,6 +147,7 @@ public class GameManager : MonoBehaviour
     public IEnumerator GameOver()
     {
         isLose = true;
+        MaybugController.instance.SetAnimationMaybug();
         m_PanelButton.SetActive(false);
         yield return new WaitForSeconds(.5F);
         Manager.Add(GAMEOVERController.GAMEOVER_SCENE_NAME);

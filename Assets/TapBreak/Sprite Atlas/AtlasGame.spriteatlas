@@ -37,25 +37,25 @@ SpriteAtlas:
   m_PackedSprites:
   - {fileID: 21300000, guid: ea344281994c649499d9da5f0d08ff0c, type: 3}
   - {fileID: 21300000, guid: 4a5d6c32182492742ac0834877145dcb, type: 3}
-  - {fileID: 21300000, guid: 02a6c9a358a9a16479c7c33688324060, type: 3}
   - {fileID: 21300000, guid: 497d54a4faeef69469af0546111c60e7, type: 3}
   - {fileID: 21300000, guid: d2148fe7e122b044986e3bb72d3dcc36, type: 3}
   - {fileID: 21300000, guid: a50f3a5833b216a46802bcd47fd365eb, type: 3}
+  - {fileID: 21300000, guid: 2fcbd46a7e8a5bb4f91f841e51c011fb, type: 3}
   - {fileID: 21300000, guid: 0e5e0cfbc29672b4b9bb70dca2c6b1be, type: 3}
   - {fileID: 21300000, guid: 07a97b0c72eb7ad4db5bc069587b0de2, type: 3}
-  - {fileID: 21300000, guid: f634198c04e3c064ebb177c78db8743b, type: 3}
+  - {fileID: 21300000, guid: 25d2965dfc466a84ea2522fc96f19943, type: 3}
   - {fileID: 21300000, guid: 5e17b9fefd8dba04d8e4145083c46ca4, type: 3}
   - {fileID: 21300000, guid: f4e9f98f0a5965249abe87581720467d, type: 3}
   m_PackedSpriteNamesToIndex:
   - BoxSlide
   - BlockDynamic
-  - MayBug
   - Ground
   - Shit
   - Spike
+  - binh red
   - Trap
   - Triangle
-  - Untitled-1
+  - binh blue
   - Stone
   - BoxStatic
   m_Tag: AtlasGame

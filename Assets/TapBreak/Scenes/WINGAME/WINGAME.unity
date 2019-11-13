@@ -130,7 +130,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1387961}
   - component: {fileID: 1387960}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: WINGAME
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -177,7 +177,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 407137576}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Container
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -313,7 +313,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 971127337}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Static
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -430,7 +430,7 @@ GameObject:
   - component: {fileID: 1997761295}
   - component: {fileID: 1997761294}
   - component: {fileID: 1997761296}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Animation
   m_TagString: Untagged
   m_Icon: {fileID: 0}

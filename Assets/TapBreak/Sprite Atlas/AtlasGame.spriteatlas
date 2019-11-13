@@ -31,7 +31,7 @@ SpriteAtlas:
     variantMultiplier: 1
     packables:
     - {fileID: 102900000, guid: 2449ee4d78248d34b82da2b889212602, type: 3}
-    totalSpriteSurfaceArea: 104396
+    totalSpriteSurfaceArea: 114396
     bindAsDefault: 1
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
@@ -43,6 +43,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: a50f3a5833b216a46802bcd47fd365eb, type: 3}
   - {fileID: 21300000, guid: 0e5e0cfbc29672b4b9bb70dca2c6b1be, type: 3}
   - {fileID: 21300000, guid: 07a97b0c72eb7ad4db5bc069587b0de2, type: 3}
+  - {fileID: 21300000, guid: f634198c04e3c064ebb177c78db8743b, type: 3}
   - {fileID: 21300000, guid: 5e17b9fefd8dba04d8e4145083c46ca4, type: 3}
   - {fileID: 21300000, guid: f4e9f98f0a5965249abe87581720467d, type: 3}
   m_PackedSpriteNamesToIndex:
@@ -54,6 +55,7 @@ SpriteAtlas:
   - Spike
   - Trap
   - Triangle
+  - Untitled-1
   - Stone
   - BoxStatic
   m_Tag: AtlasGame

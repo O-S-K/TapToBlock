@@ -49,7 +49,7 @@ public class Const
 #endif
 
 #endif
-    public const int NUM_TOTAL_STAGE = 50;
+    public const int NUM_TOTAL_STAGE = 100;
     public const int START_ADS = 5;
     public const float TIME_BETWEEN_ADS = 60;
 }

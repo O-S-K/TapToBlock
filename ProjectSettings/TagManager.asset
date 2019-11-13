@@ -9,6 +9,8 @@ TagManager:
   - Block
   - Spike
   - Target
+  - Start
+  - End
   layers:
   - Default
   - TransparentFX
@@ -48,4 +50,7 @@ TagManager:
     locked: 0
   - name: Ground
     uniqueID: 102091667
+    locked: 0
+  - name: UI
+    uniqueID: 970874551
     locked: 0

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 7165218421950800965}
   - component: {fileID: 7165218421950800966}
   - component: {fileID: 7165218421950800964}
+  - component: {fileID: 7514926175414995064}
   - component: {fileID: 7165218421950800967}
   - component: {fileID: 7165218421950800984}
   - component: {fileID: 6029989340369741224}
@@ -101,11 +102,23 @@ MonoBehaviour:
   animatorPlayer: {fileID: 6029989340369741224}
   m_SpashShit: {fileID: 5884268314444299919, guid: 8522f376d4cadf64595df6af1c6d2119,
     type: 3}
-  m_Target: {fileID: 2477373465226740907, guid: a822070107aa45040923b699a6b60085,
-    type: 3}
   m_ParticleDead: {fileID: 4526507764487785995, guid: 93fe0ec723701224ca383fb3d0bd8c20,
     type: 3}
   m_Splatter: {fileID: 11466376, guid: 273acd9f54f187a48a419d6b81376337, type: 3}
+--- !u!114 &7514926175414995064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7165218421950800985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9da366e9de3e984bb49fda13b53e793, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_TargetEnd: {fileID: 0}
+  m_TargetStart: {fileID: 0}
 --- !u!58 &7165218421950800967
 CircleCollider2D:
   m_ObjectHideFlags: 0
